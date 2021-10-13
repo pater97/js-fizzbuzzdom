@@ -19,3 +19,30 @@ h1{
     text-align: center;
     padding: 2rem 0;
 }
+/* tabella  */
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    font-size: 1.5rem;
+}
+.list li{
+    width: 100px;
+    height: 100px;
+    margin: .5rem;
+    text-align: center;
+    line-height: 100px;
+}
+/* utility */
+.number{
+    background-color: #1289b2;
+}
+.fizz{
+    background-color: #0bd6a1;
+}
+.buzz{
+    background-color: #ffd167;
+}
+.fizzBuzz{
+    background-color: #f0466f;
+}
