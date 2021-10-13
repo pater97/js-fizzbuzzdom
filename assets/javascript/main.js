@@ -5,19 +5,31 @@
 
 // OPERAZIONI:
 
-// -1 creazione ciclo base 1 to 100
-// -2 verifcare tramite l'utilizzo ddell'operatore resto "%" se i multipli del numero che voglio hanno come somma 0.
-// -3 eseguire ogni condizione con if/else if/else in base a ciò che voglio ottenere
-// -4 inserire nell'html i risultati
+// -1 definire gli agganci e le variabili per l'inserimento in html
+// -2 creazione ciclo base 1 to 100
+// -3 inserire una condizione if/else if/else utilizzando % per verificare se la somma di i con i numeri 3,5,3 e 5 è 0
+// -4 creazione di un contenuto da inserire in html
+// -5 inserire nell'html i risultati 
 
-for (let i = 1; i <= 100; i++) { //1
-    if ((i % 3 == 0) && (i % 5 == 0)) { //2
-        console.log("fizzBuzz");
+let list = document.querySelector(`.list`)  //1
+
+for (let i = 1; i <= 100; i++) { //2
+    if ((i % 3 == 0) && (i % 5 == 0)) { //3
+        console.log("fizzBuzz"); //test
+        let element = `<li class="fizzBuzz"> ${`fizzBuzz`} </li>` //4
+        list.innerHTML += element //5
     } else if (i % 3 == 0) {
-        console.log("fizz");
+        console.log("fizz");  //test
+        let element = `<li class="fizz">${`fizz`}</li>` //4
+        list.innerHTML += element //5
     } else if (i % 5 == 0) {
-        console.log("buzz");
+        console.log("buzz");  //test
+        let element = `<li class="buzz">${`buzz`}</li>` //4
+        list.innerHTML += element //5
     } else {
-        console.log(i);
+        console.log(i);  //test
+        let element = `<li class="number">${i}</li>` //4
+        list.innerHTML += element //5
     }
 }
+
