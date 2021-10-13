@@ -1,5 +1,21 @@
+/* reset pagina  */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+/* general */
+body{
+    background-color: #083b4c;
+}
+/* main */
+.container{
+    width: 80%;
+    margin: auto;
+}
+h1{
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    padding: 2rem 0;
 }
